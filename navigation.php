@@ -7,22 +7,25 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Nav bar</title>
+    <title>Navigation bar</title>
 
 </head>
 
 <body>
-
-
-
-<a href="dashboard.php" title="">Dashboard</a> <br>
-
-<!--<a href="pitchType.php">Pitch Type</a><br>-->
-<!---->
-<!--<a href="pitch.php" title="">Pitch</a><br>-->
-
-<a href="logout.php" title="">Logout</a>
+<header class="bg-red-500 font-semibold text-white">
+    <nav class="flex justify-between  py-4 px-8">
+        <ul class="justify-start flex items-center gap-8" >
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="pitch.php">Pitch</a></li>
+            <li><a href="pitch-type.php">Pitch Type</a></li>
+        </ul>
+        <button class="px-2 pt-1 pb-2 border-white border-2 rounded-lg text-center grid place-items-center">
+            <a href="logout.php" class="ml-full block">Logout</a>
+        </button>
+    </nav>
+</header>
 
 </body>
 
